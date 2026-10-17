@@ -64,7 +64,7 @@ TEMPLATE = """<!doctype html>
 <meta property="og:type" content="website">
 <meta property="og:url" content="{canonical}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;1,400&family=Alegreya+SC:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;1,400&family=Alegreya+SC:wght@500&family=Uncial+Antiqua&display=swap">
 <link rel="stylesheet" href="style.css">
 {schema}
 </head>
@@ -76,6 +76,7 @@ TEMPLATE = """<!doctype html>
     <li><a class="choristes" href="{choristers}">Espace choristes</a></li>
   </ul></nav>
 </header>
+<div class="staff-wrap">{staff}</div>
 <main>
 {body}
 </main>
@@ -102,9 +103,10 @@ def build():
         if name == "index":
             schema = '<script type="application/ld+json">' + json.dumps(SCHEMA, ensure_ascii=False) + "</script>"
         body = (ROOT / "pages" / f"{name}.html").read_text(encoding="utf-8")
+        staff = (ROOT / "pages" / "_staff.svg").read_text(encoding="utf-8")
         html = TEMPLATE.format(title=title, description=description, canonical=canonical,
                                schema=schema, nav=nav,
-                               robots='<meta name="robots" content="noindex">' if NOINDEX else "", body=body.strip(), choristers=CHORISTERS_URL)
+                               robots='<meta name="robots" content="noindex">' if NOINDEX else "", body=body.strip(), staff=staff, choristers=CHORISTERS_URL)
         (ROOT / f"{name}.html").write_text(html, encoding="utf-8")
         print("built", name)
 

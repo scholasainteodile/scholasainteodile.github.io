@@ -7,10 +7,10 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).parent
-SITE_URL = "https://scholasainteodile.github.io"
+SITE_URL = "https://scholasainteodile.fr"
 # Keep search engines away until the placeholders are filled in.
 NOINDEX = False
-CHORISTERS_URL = "https://scholasainteodile.github.io/espace-choristes/"
+CHORISTERS_URL = "https://scholasainteodile.fr/espace-choristes/"
 
 PAGES = [
     # (file, nav label, <title>, meta description)

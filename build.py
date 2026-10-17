@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 SITE_URL = "https://scholasainteodile.github.io"
 # Keep search engines away until the placeholders are filled in.
-NOINDEX = True
+NOINDEX = False
 CHORISTERS_URL = "https://scholasainteodile.github.io/espace-choristes/"
 
 PAGES = [

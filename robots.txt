@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /espace-choristes/
+Sitemap: https://scholasainteodile.github.io/sitemap.xml

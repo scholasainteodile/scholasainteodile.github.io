@@ -17,7 +17,7 @@ PAGES = [
     ("index", "Accueil", "Schola Sainte-Odile – Chant grégorien à Paris 17e",
      "La Schola Sainte-Odile chante le grégorien à la liturgie de l'église Sainte-Odile, Paris 17e. "
      "Offices, répertoire, enregistrements, nous rejoindre."),
-    ("celebrations", "Célébrations chantées", "Célébrations chantées en grégorien – Sainte-Odile, Paris 17e",
+    ("offices", "Offices chantés", "Offices chantés en grégorien – Sainte-Odile, Paris 17e",
      "Programme des messes et offices chantés en grégorien par la Schola Sainte-Odile : propre, ordinaire et pièces de chaque dimanche."),
     ("partitions", "Partitions", "Partitions grégoriennes – Schola Sainte-Odile",
      "Partitions grégoriennes libres de droits chantées par la Schola Sainte-Odile, Paris 17e."),

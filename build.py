@@ -15,16 +15,15 @@ CHORISTERS_URL = "https://scholasainteodile.github.io/espace-choristes/"
 PAGES = [
     # (file, nav label, <title>, meta description)
     ("index", "Accueil", "Schola Sainte-Odile – Chant grégorien à Paris 17e",
-     "La Schola Sainte-Odile chante le grégorien à la liturgie de l'église Sainte-Odile, Paris 17e. "
-     "Offices, répertoire, enregistrements, nous rejoindre."),
+     "Chœur grégorien de l'église Sainte-Odile, Paris 17e, au service de la liturgie traditionnelle."),
     ("offices", "Prochains offices", "Prochains offices chantés en grégorien – Sainte-Odile, Paris 17e",
-     "Programme des messes et offices chantés en grégorien par la Schola Sainte-Odile : propre, ordinaire et pièces de chaque dimanche."),
+     "Programme des messes chantées par la Schola Sainte-Odile : propre grégorien et ordinaire de chaque dimanche et fête."),
     ("partitions", "Partitions", "Partitions grégoriennes – Schola Sainte-Odile",
-     "Partitions grégoriennes libres de droits chantées par la Schola Sainte-Odile, Paris 17e."),
+     "Partitions grégoriennes chantées par la Schola Sainte-Odile, Paris 17e."),
     ("ecouter", "Écouter", "Écouter la Schola Sainte-Odile – chant grégorien, Paris 17e",
      "Enregistrements de la Schola Sainte-Odile : introïts, graduels, hymnes et antiennes grégoriennes."),
     ("rejoindre", "Nous rejoindre", "Rejoindre la Schola Sainte-Odile – chœur grégorien à Paris 17e",
-     "Chanter le grégorien à Sainte-Odile, Paris 17e : répétitions, voix recherchées, contact."),
+     "Rejoindre la Schola Sainte-Odile : répétitions le vendredi soir à l'église Sainte-Odile, Paris 17e. Toutes les voix sont les bienvenues."),
 ]
 
 # Pages kept in pages/ but not published for now.
@@ -63,6 +62,13 @@ TEMPLATE = """<!doctype html>
 <meta property="og:description" content="{description}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{canonical}">
+<meta property="og:site_name" content="Schola Sainte-Odile">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="{site}/images/apercu-partage.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La nef et les verrières de l'église Sainte-Odile">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;1,400&family=Alegreya+SC:wght@500&family=Uncial+Antiqua&display=swap">
 <link rel="stylesheet" href="style.css">
@@ -104,7 +110,7 @@ def build():
             schema = '<script type="application/ld+json">' + json.dumps(SCHEMA, ensure_ascii=False) + "</script>"
         body = (ROOT / "pages" / f"{name}.html").read_text(encoding="utf-8")
         staff = (ROOT / "pages" / "_staff.svg").read_text(encoding="utf-8")
-        html = TEMPLATE.format(title=title, description=description, canonical=canonical,
+        html = TEMPLATE.format(title=title, site=SITE_URL, description=description, canonical=canonical,
                                schema=schema, nav=nav,
                                robots='<meta name="robots" content="noindex">' if NOINDEX else "", body=body.strip(), staff=staff, choristers=CHORISTERS_URL)
         (ROOT / f"{name}.html").write_text(html, encoding="utf-8")

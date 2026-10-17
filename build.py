@@ -27,6 +27,9 @@ PAGES = [
      "Chanter le grégorien à Sainte-Odile, Paris 17e : répétitions, voix recherchées, contact."),
 ]
 
+# Pages kept in pages/ but not published for now.
+HIDDEN = {"ecouter"}
+
 SCHEMA = {
     "@context": "https://schema.org",
     "@type": "MusicGroup",
@@ -86,10 +89,13 @@ TEMPLATE = """<!doctype html>
 
 
 def build():
-    for name, label, title, description in PAGES:
+    published = [page for page in PAGES if page[0] not in HIDDEN]
+    for name in HIDDEN:
+        (ROOT / f"{name}.html").unlink(missing_ok=True)
+    for name, label, title, description in published:
         nav = "\n".join(
             f'    <li><a href="{p}.html"{" aria-current=\"page\"" if p == name else ""}>{l}</a></li>'
-            for p, l, _, _ in PAGES
+            for p, l, _, _ in published
         )
         canonical = SITE_URL + "/" + ("" if name == "index" else f"{name}.html")
         schema = ""

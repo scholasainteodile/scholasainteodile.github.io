@@ -33,7 +33,7 @@ SCHEMA = {
     "name": "Schola Sainte-Odile",
     "url": SITE_URL + "/",
     "genre": "Chant grégorien",
-    "description": "Chœur grégorien de l'église Sainte-Odile, Paris 17e, au service du rite romain traditionnel.",
+    "description": "Chœur grégorien de l'église Sainte-Odile, Paris 17e, au service de la liturgie traditionnelle.",
     "location": {
         "@type": "Church",
         "name": "Église Sainte-Odile",

@@ -77,7 +77,7 @@ TEMPLATE = """<!doctype html>
 {body}
 </main>
 <footer class="site-foot">
-  <span>Schola Sainte-Odile · Église Sainte-Odile, 2, avenue Stéphane-Mallarmé, 75017 Paris · Métro Pereire, Porte de Champerret</span>
+  <span>Schola Sainte-Odile · Église Sainte-Odile, 2, avenue Stéphane-Mallarmé, 75017 Paris · Métro ligne 3 et tram T3b, Porte de Champerret</span>
   <span>En lien avec l'<a href="https://www.orguesainteodileparis.fr/">Association musicale de Sainte-Odile</a> et la <a href="https://sainteodile.fr/">paroisse Sainte-Odile</a>.</span>
 </footer>
 </body>

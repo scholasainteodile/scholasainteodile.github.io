@@ -15,7 +15,7 @@ CHORISTERS_URL = "https://scholasainteodile.fr/espace-choristes/"
 PAGES = [
     # (file, nav label, <title>, meta description)
     ("index", "Accueil", "Schola Sainte-Odile – Chant grégorien à Paris 17e",
-     "Chœur grégorien de l'église Sainte-Odile, Paris 17e, au service de la liturgie traditionnelle."),
+     "Chœur de l'église Sainte-Odile, Paris 17e, au service de la liturgie traditionnelle."),
     ("offices", "Prochains offices", "Prochains offices chantés en grégorien – Sainte-Odile, Paris 17e",
      "Programme des messes chantées par la Schola Sainte-Odile : propre grégorien et ordinaire de chaque dimanche et fête."),
     ("partitions", "Partitions", "Partitions grégoriennes – Schola Sainte-Odile",
@@ -35,7 +35,7 @@ SCHEMA = {
     "name": "Schola Sainte-Odile",
     "url": SITE_URL + "/",
     "genre": "Chant grégorien",
-    "description": "Chœur grégorien de l'église Sainte-Odile, Paris 17e, au service de la liturgie traditionnelle.",
+    "description": "Chœur de l'église Sainte-Odile, Paris 17e, au service de la liturgie traditionnelle.",
     "location": {
         "@type": "Church",
         "name": "Église Sainte-Odile",

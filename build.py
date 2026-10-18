@@ -24,6 +24,8 @@ PAGES = [
      "Enregistrements de la Schola Sainte-Odile : introïts, graduels, hymnes et antiennes grégoriennes."),
     ("rejoindre", "Nous rejoindre", "Rejoindre la Schola Sainte-Odile – chœur grégorien à Paris 17e",
      "Rejoindre la Schola Sainte-Odile : répétitions le vendredi soir à l'église Sainte-Odile, Paris 17e. Toutes les voix sont les bienvenues."),
+    ("divers", "Divers", "Divers – Schola Sainte-Odile",
+     "Documents utiles de la Schola Sainte-Odile, Paris 17e : calendrier propre de Paris."),
 ]
 
 # Pages kept in pages/ but not published for now.

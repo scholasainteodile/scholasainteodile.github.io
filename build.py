@@ -56,6 +56,9 @@ TEMPLATE = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>{title}</title>
 <meta name="description" content="{description}">
 <meta name="google-site-verification" content="M3VZghlCGwG6WWZfvN73WMn9SONsfBhNgNC5m83VB0o">

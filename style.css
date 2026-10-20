@@ -75,10 +75,11 @@ h1::first-letter { font-family: var(--font-initial); color: var(--rubric); font-
 .split p { margin: 0; }
 @media (max-width: 40rem) { .split { grid-template-columns: 1fr; } .photo.tall img { aspect-ratio: 16 / 10; } }
 
-/* Collapsible section: only the title shows until clicked */
-details.fold { margin-top: 2rem; }
-details.fold > summary { cursor: pointer; list-style: none; display: flex; align-items: baseline; gap: .5rem; }
-details.fold > summary::-webkit-details-marker { display: none; }
-details.fold > summary::before { content: "▸"; color: var(--rubric); }
-details.fold[open] > summary::before { content: "▾"; }
-details.fold > summary h2 { display: inline; }
+/* Collapsible list row: looks like a link row, opens on click */
+ul.list li.fold { display: block; }
+li.fold summary { cursor: pointer; list-style: none; display: flex; flex-wrap: wrap; justify-content: space-between; gap: .2rem 1rem; }
+li.fold summary::-webkit-details-marker { display: none; }
+li.fold .fold-title { color: var(--ink); text-decoration: underline; text-decoration-color: var(--rubric); text-underline-offset: 3px; }
+li.fold summary:hover .fold-title { color: var(--rubric); }
+li.fold details[open] .fold-title { color: var(--rubric); }
+li.fold details > p { margin: .8rem 0 0; }

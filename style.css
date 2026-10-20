@@ -55,7 +55,7 @@ ul.list li { display: flex; flex-wrap: wrap; justify-content: space-between; gap
 .staff-wrap { max-width: 46rem; margin: 0 auto; padding-top: 1.1rem; }
 .staff-wrap { overflow: hidden; }
 /* Long chant line, shown at a readable height and slowly scrolled to its end and back */
-.staff { display: block; width: auto; max-width: none; height: 3.4rem; animation: chant-scroll 100s linear infinite alternate; }
+.staff { display: block; width: auto; max-width: none; height: 3.4rem; animation: chant-scroll 80s linear infinite alternate; }
 @keyframes chant-scroll { from { transform: translateX(0); } to { transform: translateX(calc(-100% + min(46rem, 100vw - 32px))); } }
 @media (prefers-reduced-motion: reduce) { .staff-wrap { overflow-x: auto; } .staff { animation: none; } }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .staff { background: #f6f6f3; border-radius: 3px; padding: .3rem; } }

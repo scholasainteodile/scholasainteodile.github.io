@@ -36,8 +36,18 @@ SCHEMA = {
     "@type": "MusicGroup",
     "name": "Schola Sainte-Odile",
     "url": SITE_URL + "/",
-    "genre": "Chant grégorien",
-    "description": "Chœur de l'église Sainte-Odile, Paris 17e, au service de la liturgie traditionnelle.",
+    "alternateName": ["Chœur grégorien de Sainte-Odile", "Chorale de l'église Sainte-Odile"],
+    "genre": ["Chant grégorien", "Plain-chant", "Polyphonie sacrée", "Musique sacrée", "Motets", "Cantiques"],
+    "description": "Chœur liturgique de l'église Sainte-Odile (Paris 17e) : chant grégorien, polyphonie, "
+                   "motets et cantiques au service de la liturgie traditionnelle.",
+    "keywords": "chœur grégorien Paris, chorale grégorienne, plain-chant, schola, chant grégorien Paris 17e, "
+                "musique sacrée, polyphonie, messe traditionnelle, liturgie traditionnelle, chorale paroissiale, "
+                "chœur liturgique, chorale liturgique, messe de saint Pie V, messe tridentine, "
+                "forme extraordinaire du rite romain, missel de 1962",
+    "email": "scholasainteodile@gmail.com",
+    "image": SITE_URL + "/images/apercu-partage.jpg",
+    "logo": SITE_URL + "/apple-touch-icon.png",
+    "areaServed": {"@type": "City", "name": "Paris"},
     "location": {
         "@type": "Church",
         "name": "Église Sainte-Odile",
@@ -73,7 +83,7 @@ TEMPLATE = """<!doctype html>
 <meta property="og:image" content="{site}/images/apercu-partage.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="La nef et les verrières de l'église Sainte-Odile">
+<meta property="og:image:alt" content="Schola Sainte-Odile : incipit grégorien Cantate Domino canticum novum">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;1,400&family=Alegreya+SC:wght@500&family=Uncial+Antiqua&display=swap">
@@ -95,6 +105,7 @@ TEMPLATE = """<!doctype html>
 <footer class="site-foot">
   <span>Schola Sainte-Odile · Église Sainte-Odile, 2, avenue Stéphane-Mallarmé, 75017 Paris · Métro ligne 3 et tram T3b, Porte de Champerret</span>
   <span>En lien avec l'<a href="https://www.orguesainteodileparis.fr/">Association musicale de Sainte-Odile</a> et la <a href="https://sainteodile.fr/">paroisse Sainte-Odile</a>.</span>
+  <span><a class="discret" href="/travaux-en-cours/">©</a> 2026 Schola Sainte-Odile</span>
 </footer>
 <!-- Visit counter (GoatCounter, no cookies): https://scholasainteodile.goatcounter.com -->
 <script data-goatcounter="https://scholasainteodile.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>

@@ -99,7 +99,7 @@ TEMPLATE = """<!doctype html>
   </ul></nav>
 </header>
 <!-- Announcement band, shown instead of the chant line until 29 November 2026 inclusive (Paris time) -->
-<a class="annonce" id="annonce" href="offices.html"><span class="annonce-track"><span>Vêpres et Salut chantés à 16 h 30, avant la messe basse · Dimanche 29 novembre, premier dimanche de l'Avent</span><span aria-hidden="true">Vêpres et Salut chantés à 16 h 30, avant la messe basse · Dimanche 29 novembre, premier dimanche de l'Avent</span></span></a>
+<a class="annonce" id="annonce" href="offices.html"><span class="annonce-track"><span>Vêpres et Salut chantés le premier dimanche de l’Avent</span><span aria-hidden="true">Vêpres et Salut chantés le premier dimanche de l’Avent</span></span></a>
 <div class="staff-wrap" id="staff-wrap" hidden>{staff}</div>
 <script>if (Date.now() >= Date.parse("2026-11-30T00:00:00+01:00")) {{ document.getElementById("annonce").remove(); document.getElementById("staff-wrap").hidden = false; }}</script>
 <main>

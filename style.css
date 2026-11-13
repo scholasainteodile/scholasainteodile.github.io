@@ -88,7 +88,7 @@ li.fold details > p { margin: .8rem 0 0; }
 .annonce { --annonce: #1d4fb8; display: block; max-width: 46rem; margin: 1.1rem auto 0; overflow: hidden; white-space: nowrap; text-decoration: none; color: var(--annonce);
   font-family: var(--font-initial); font-size: 1.9rem; line-height: 1.3; border-block: 1px solid color-mix(in srgb, var(--annonce) 35%, transparent); padding-block: .45rem; }
 .annonce:hover, .annonce:focus-visible { color: var(--annonce); }
-.annonce-track { display: inline-flex; animation: annonce-scroll 15s linear infinite; }
+.annonce-track { display: inline-flex; animation: annonce-scroll 22s linear infinite; }
 .annonce-track > span { padding-right: 2.5rem; }
 @keyframes annonce-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .annonce { --annonce: #8fb0f5; } }
